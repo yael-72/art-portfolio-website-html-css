@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h5{
+   font-size:3rem;
+   width:100vw;
+   margin-bottom: 0%;
+   text-align:center;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+padding-top: 6rem;
+margin-top: 0rem;
+}
+h3{
+    font-size:1.5rem;
+    text-align:center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+  
+}
+body{
+max-width: 100vw;
+min-height: 100%;
+}
+#youget{
+    color:#0a0909c4;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sirton{
+ margin-bottom: 5%;
+ width: 20vw;
+}
+#dafabait{
+    width: 10rem;
+}
+a{
+   color:rgb(250, 77, 83);
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: larger;
+ 
+}
+@media only screen and (max-width:480px) {
+    h5{font-size:2.5rem ;}
+    .sirton{width: 50vw;}
+}
+  

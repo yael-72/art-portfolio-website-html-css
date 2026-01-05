@@ -1,0 +1,219 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     background-color: #Ff5757; 
+     margin: 0% auto;
+     font-size: 16px;
+}
+body,html{
+    padding: 0%;
+    margin: 0%;
+    overflow-x: hidden;
+}
+/* קישורים עליונים */
+li{
+    list-style: none;
+    font-size: 3rem;
+    width: 25vw;
+    text-align: center;
+    padding-bottom: 3vh;
+    padding-top: 2vh;
+    text-wrap: nowrap;
+    border-bottom: #Ff5757 solid 0.5px;
+    margin-bottom: 0.3%;
+}
+ul{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color:black;
+    width: 100vw;
+    position:fixed ;
+    top: 0%;
+    left: 0%;
+    margin-top: 0%;
+    z-index: 99;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+   
+   
+}
+#li1{
+    color: #Ff5757;
+}
+a:hover{
+    color: #Ff5757;
+}
+/*סידור ה-main*/
+main{
+    display: flex;
+    flex-direction: column;
+}
+#sample{
+    display: flex;
+    margin-top: 10%;
+    flex-direction: row;
+   position: relative;
+   left: -78%;
+    animation: sampleTransform linear 20s 1s infinite alternate;
+}
+.sampleImg{
+    width: 18vw;
+    height: auto;
+    border: solid #Ff5757;
+}
+
+
+#wide1{
+    width: 20vw;
+    border: solid #Ff5757;
+}#wide2{
+    width: 25vw;
+    border: solid #Ff5757;
+}#wide3{
+    width: 28vw;
+    border: solid #Ff5757;
+}#wide4{
+    width: 30vw;
+    border: solid #Ff5757;
+}
+
+.sampleImg:hover{
+    border: solid #000000 3px !important;
+}
+
+/* המלצות*/
+/* #ham1{opacity: 0; 
+  animation: ham 50s 0s infinite; 
+   top:20%
+}
+#ham2{ opacity: 0; 
+    animation: ham 50s 18s infinite; 
+   
+}
+#ham3{opacity: 0; 
+    animation: ham 50s 38s infinite; 
+    top:20%
+} */
+.hamlaza{
+ margin-bottom: 1.8%;
+}
+#bottomOfMain{
+    display: flex;
+    flex-direction:column-reverse;
+    flex-wrap: nowrap;
+    align-items: center;
+    /* margin-top: 4vh; */
+}
+.hamlaza{
+    width: 27vw;
+    height: 35vh;
+    /* height: 37vh; */
+    font-size:1.6rem;
+    background-color: rgba(243, 247, 251,0.3);
+    padding: 3%;
+    margin-top: 5%;
+    margin-right: 4%;
+    text-align: right;
+}
+.hamlaza:hover{
+    border: solid #000000 3px !important;
+    font-size: 1.7rem;
+}
+#hamlazot{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 3%;
+    margin-left: 2%;
+    margin-bottom: 5%;
+}
+h5{
+    margin: 0px;
+}
+video{
+    width: 20vw;
+}
+#logo{
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    display: flex;
+   justify-content: center;
+}
+#odot{
+    width: 75vw;
+    /* height: 37vh; */
+    font-size:1.6rem;
+    background-color: rgba(243, 247, 251,0.3);
+    padding: 2%;
+    margin-top: 5%;
+    text-align: right;
+}
+#odot:hover{
+    border: solid #000000 3px !important;
+    font-size: 1.8rem;
+}
+@keyframes sampleTransform{
+    0%{transform: translateX(0%);}
+    100%{transform: translateX(75%);}
+}
+@media only screen and (min-width:768px) and (max-width:1024px){
+    html{font-size: 12.5px;}
+    ul{
+     display:grid;
+     direction: rtl;
+     grid-template-columns:repeat(2,1fr);
+     justify-content:center;
+    left:-2%;
+    }
+    li{ 
+     margin:0% 2.5% 0.8% 2.5%;
+     border-bottom: #Ff5757 solid 0.5px;
+     width: 46vw;
+     font-size: 2.5rem;
+    }
+    .hamlaza{
+        height: 37vh;
+    }
+    #sample{
+        margin-top: 23%;
+    }
+    video{
+        width: 15vw;
+    }
+}
+@media only screen and (max-width:480px){
+    html{font-size: 10px;}
+    ul{
+        display:grid;
+        direction: rtl;
+        grid-template-columns:repeat(2,1fr);
+        justify-content:center;
+       left:-2%;
+       }
+       li{ 
+        margin:2% 4% 1% 0%;
+        padding: 0.5%;
+        border-bottom: #Ff5757 solid 0.5px;
+        width: 46vw;
+       }
+       #sample{
+        margin-top:22% ;
+       }
+       #hamlazot{
+        flex-direction:column;
+       }
+       .hamlaza{
+        width: 74vw;
+        height: auto;
+        margin-left: 0.5%;
+       }
+       #bottomOfMain{
+        font-size: 150%;
+       }
+       .sampleImg:hover{
+        border: solid #000000 1.5px !important;
+    }
+       
+    }
